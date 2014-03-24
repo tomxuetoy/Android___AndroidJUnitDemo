@@ -1,4 +1,7 @@
 package com.android.junit;
+
+import android.R.integer;
+
 /**
  * ±»²âÊÔµÄÀà
  * @author Lupeng
@@ -11,5 +14,10 @@ public class Apps {
 	
 	public void methodB(String name) {
 		System.out.println("---Hello " + name + "!");
+	}
+	
+	public int addBoth(int a, int b)
+	{
+		return a+b;
 	}
 }

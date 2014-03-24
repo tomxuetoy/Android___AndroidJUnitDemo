@@ -7,7 +7,7 @@ import android.test.AndroidTestCase;
  * @author Lupeng
  * @create 2011-08-08
  */
-public class AppsTesterABC extends AndroidTestCase {
+public class AppsTester extends AndroidTestCase {
 	Apps a = null;
 	protected void setUp() throws Exception {
 		a = new Apps();
@@ -22,4 +22,8 @@ public class AppsTesterABC extends AndroidTestCase {
 		a.methodB("Android");
 	}
 	
+	// addBoth()≤‚ ‘∑Ω∑®
+		public void testAddBoth() {
+			assertEquals(31, a.addBoth(10, 20));
+		}
 }
